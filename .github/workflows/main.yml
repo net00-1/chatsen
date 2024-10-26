@@ -125,12 +125,12 @@ jobs:
           brew install gnu-sed
           sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
-      - uses: actions/checkout@v2
-        with:
-          repository: chatsen/signingkeys
-          token: ${{secrets.GHKEY}}
-          path: signingkeys
-          ref: master
+      # - uses: actions/checkout@v2
+      #   with:
+      #     repository: chatsen/signingkeys
+      #     token: ${{secrets.GHKEY}}
+      #     path: signingkeys
+      #     ref: master
 
       - uses: actions/checkout@v2
         with:
